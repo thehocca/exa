@@ -4,7 +4,7 @@ const exaController = require("../../controller/operator/index.js");
 const verifySignature = require("../../middleware/index");
 
 // Senin içeriden kullanacağın
-router.get("/games/list",    exaController.fetchGameList);
+router.get("/getList",    exaController.fetchGameList);
 
 router.post("/authenticate", verifySignature, exaController.authenticate);
 router.post("/bet",          verifySignature, exaController.bet);

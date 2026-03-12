@@ -63,9 +63,10 @@ exports.fetchGameList = async (req, res) => {
                 type: g.gameCategory,
                 tag: g.gameCategory.toUpperCase(),
                 modes: [],
+                sortNum:0,
                 languages: [],
                 platforms: [],
-                currencies: ["USD","CHF","TR","EUR","USDT"]
+                currencies: ["USD","CHF","EUR","TR","USDT"]
             };
 
             slotBatch.push({
