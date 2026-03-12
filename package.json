@@ -1,0 +1,54 @@
+{
+  "name": "exa",
+  "version": "1.0.0",
+  "description": "exa data provider service implementation to out data service layer",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pm2 start app.js --no-daemon --name exa",
+    "stop": "pm2 stop exa",
+    "restart": "clear && pm2 restart exa && pm2 logs exa --raw"
+  },
+  "keywords": [],
+  "author": "TheHodja",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.5.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "decimal.js": "^10.6.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-useragent": "^1.0.15",
+    "helmet": "^7.0.0",
+    "http-proxy-middleware": "^3.0.5",
+    "joi": "^17.11.0",
+    "jsonwebtoken": "^9.0.2",
+    "md5": "^2.3.0",
+    "mongoose": "^6.6.5",
+    "path": "^0.12.7",
+    "redis": "^3.1.2",
+    "sanitizer": "^0.1.3",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0",
+    "tracer": "^1.1.6",
+    "uuid": "^9.0.1",
+    "xlsx": "^0.18.5",
+    "xss": "^1.0.14"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thehocca/exa.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thehocca/exa/issues"
+  },
+  "homepage": "https://github.com/thehocca/exa#readme",
+  "devDependencies": {
+    "pm2": "^6.0.13"
+  }
+}
