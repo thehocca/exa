@@ -11,6 +11,7 @@
     await require("./src/services/Tipxdb.init");
     await require("./src/services/Tiptopdb.init");
     await require("./src/services/Starwindb.init");
+    await require("./src/services/Testdb.init");
 
     try {
         console.info("Routes loading...");

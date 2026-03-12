@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="02d45b13-3c3c-42f0-9c7e-c499c4434bea" name="gambling">
+        <fileTransfer rootFolder="/home/exa" accessType="SFTP" host="167.235.65.48" port="22" sshConfigId="c4d44c9e-9339-4a9a-9136-2122770806b9" sshConfig="root@167.235.65.48:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

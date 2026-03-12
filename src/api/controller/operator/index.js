@@ -13,6 +13,8 @@ function debugLog(...args) {
 exports.fetchGameList = async (req, res) => {
     try {
         debugLog("Fetching game list…");
+        const client = (req.query.client || "Test");
+
         const data = await service.getGameList();
 
         if (!data ||data.length===0) {
@@ -76,8 +78,8 @@ exports.fetchGameList = async (req, res) => {
         console.log("dbNames", dbNames);
 
                for (const dbName of dbNames) {
-                   if(dbName==="Starwin") {
-                       const db = connections["Starwin"];
+                   if(dbName===client) {
+                       const db = connections[client];
 
                        const casinos = db.db.collection("casinos");
                        const slots = db.db.collection("slots");
